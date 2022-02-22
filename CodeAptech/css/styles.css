@@ -1,0 +1,259 @@
+/* css for all */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* css for header */
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px -2px gray;
+    position: relative;
+    z-index: 2px;
+}
+
+#header .header-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#header .header-inner .logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header .header-inner .nav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Archivo', sans-serif;
+}
+
+.main-menu>li{
+    width: fit-content;
+    margin-right: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+.main-menu>li>a{
+    text-decoration: none;
+    color: #020516;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-menu>li>a.active{
+    color: #0b249e;
+    text-shadow: 1px 1px #f5eeee;
+}
+
+
+.sub-menu{
+    display: none;
+}
+
+.main-menu>li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #F4F4F4;
+    padding: 10px;
+    width: max-content;
+}
+
+.main-menu>li:hover .sub-menu li{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.main-menu>li:hover .sub-menu li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* CSS for slider */
+#slider{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    /* position: relative; */
+}
+
+.slide-item{
+    width: 100%;
+    height: 100%;
+}
+
+.slide-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span .fa-circle-chevron-left{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(350px - 15px);
+    left: 10px;   
+    color: #fff;
+    font-size: 30px;
+    align-items: center;
+}
+
+span .fa-circle-chevron-right{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(350px - 15px);
+    right: 10px; 
+    color: #fff;
+    font-size: 30px;
+}
+
+/* Css for intro */
+#intro{
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+
+.intro-inner{
+    width: 80%;
+}
+
+.intro-inner h3{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-inner h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-content .intro-item{
+    width: 28%;
+    padding: 18px;
+    border: 1px solid gray;
+}
+
+.intro-content .intro-item img{
+    width: 100%;
+    height: 230px;
+}
+
+.intro-content .intro-item p{
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 22.5px;
+}
+
+/* CSS for form */
+#form{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #000D75 0%, #65379A 100%);
+    padding: 75px 0;
+}
+
+.form-inner{
+    width: 80%;
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+}
+
+.form-box{
+    width: calc(100% / 2);
+    height: 700px;
+}
+
+.form-img{
+    width: calc(100% / 2);
+}
+
+.form-inner .form-box h2{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.form-box .scholarship {
+    width: 80%;
+    height: 80px;
+    text-align:center;
+    margin: 10px 0 20px 0;
+}
+
+.scholarship .scholarship-btn{
+    border: 2px solid #F5EC10;
+    display: inline-block;
+    height: 63px;
+    padding: 0 25px;
+}
+
+.scholarship .scholarship-btn a{
+    text-decoration: none;
+    color: #F5EC10;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 63px;
+}
+
+.form-img{
+    width: 560px;
+    height: 700px;
+}
+
+.form-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-text{
+    width: 80%;
+    padding: 0 20px;
+}
+
+.form-text .text{
+    width: 100%;
+}
