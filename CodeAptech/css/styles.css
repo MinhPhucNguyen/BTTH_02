@@ -250,10 +250,40 @@ span .fa-circle-chevron-right{
 }
 
 .form-text{
-    width: 80%;
+    width: 69%;
     padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .form-text .text{
     width: 100%;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    line-height: 24px;
+    border: none;
+}
+
+.form-text .text-1 {
+    height: 140px;
+    width: 420px;
+}
+
+.form-text button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: #edb017;
+    width: 446.275px;
+    height: 43.2px;
+    border: none;
+    margin-top: 32px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    
+}
+
+.form__info {
+    display: block;
 }
