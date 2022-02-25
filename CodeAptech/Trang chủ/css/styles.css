@@ -114,7 +114,6 @@ span .fa-circle-chevron-left{
     position: absolute;
     width: 30px;
     height: 30px;
-    position: absolute;
     top: calc(350px - 15px);
     left: 10px;   
     color: #fff;
@@ -146,7 +145,7 @@ span .fa-circle-chevron-right{
 .intro-inner h3{
     font-size: 1.75rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 550;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -154,7 +153,7 @@ span .fa-circle-chevron-right{
 .intro-inner h4{
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 550;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -433,6 +432,7 @@ span .fa-circle-chevron-right{
     width: 100%;
     background-image: linear-gradient(180deg, #1936B4 0%, #129EBA 100%);
     display: flex;
+    padding: 0 0 30px 0;
 }
 
 #future .future-container{
@@ -609,34 +609,34 @@ span .fa-circle-chevron-right{
 }
 
 .reason-cards .reason-cards-list-a{
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .reason-card-item .reason-icon{
     display: flex;
     align-items: center;
     width: 20%;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .reason-icon img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.reason-cards-list-b .reason-card-item,
-.reason-cards-list-a .reason-card-item{
+.reason-card-item{
     display: flex;
     border: 2px solid #fff;
     border-radius: 10px;
-    padding: 4% 2%;
+    padding: 30px 15px;
 }
 
 .reason-card-item .reason-card-desc{
     width: 100%;
+    height: 100%;
 }
 
-.mt-75{
+.mt-54{
     margin-top: 54px;
 }
 
@@ -655,11 +655,14 @@ span .fa-circle-chevron-right{
 }
 
 .reason-cards .reason-cards-list-b{
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .reason-wrapper .advise-btn{
+    width: 100%;
     margin-top: 75px;
+    display: flex;
+    justify-content: center;
 }
 
 .advise-btn .advise-btn-main{
@@ -673,11 +676,170 @@ span .fa-circle-chevron-right{
 }
 
 .advise-btn .advise-btn-main span{
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 .advise-btn .advise-btn-main:hover{
     background-color: #FF7B06;
     transition: 0.4s;
+}
+
+/* CSS for NEWS-CONTAINER */
+#aptech-news{
+    width: 100%;
+    background-color: #E9E9E9B5;
+    padding: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#aptech-news .news-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 80px;
+}
+
+.news-container .news-heading{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.news-heading .news-border{
+    width: 80px;
+    height: 4px;
+    background-color: #ff712b;
+    display: inline-block;
+}
+
+.news-heading .news-heading-main p {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.news-container .news-cards-list{
+    display: flex;
+    height: 100%;
+}
+
+.news-cards-list .news-card-item{
+    padding: 0 15px;
+    width: 100%;
+}
+
+.news-card-item .news-img{
+    padding: 5px;
+    background-color: #fff;
+}
+
+.news-card-item .news-img img{
+    width: 100%;
+}
+
+.news-card-item:hover .news-img img{
+    opacity: 0.7;
+}
+
+.news-card-item .news-content{
+    padding: 0 20px 20px;
+    background-color: #fff;
+}
+
+.news-content-meta .news-content-date a,
+.news-content .news-content-meta{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #0B249E;
+    font-size: 13px;
+}
+
+.news-content-meta .news-content-date{
+    line-height: 25px;
+}
+
+.news-content .news-content-meta i{
+    padding-right: 5px;
+}
+
+.news-content .news-content-title{
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.news-content .news-content-title p{
+    width: 100%;
+}
+
+.news-content .news-btn-wrapper{
+    background-color: #2575fc;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 22px;
+}
+
+.news-content .news-btn-wrapper:hover{
+    background-color: #0350d2;
+    transition: .4s ease;
+}
+
+.news-btn-wrapper .news-btn{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+/* CSS for Partner-Aptech */
+#partner{
+    padding: 24px 0 60px 0;
+    display: flex;
+    /* position: relative; */
+    height: 380px;
+}
+
+#partner .partner-container{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.partner-container .partner-logo-list{
+    display: flex;
+    justify-content: center;
+}
+
+.partner-logo-list .partner-logo-item{
+    display: flex;
+    width: calc(80%/5);
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.partner-logo-item .partner-logo-con{
+    margin: 0 20px 20px;
+}
+
+.partner-logo-list .partner-logo-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.partner-container .partner-heading{
+    margin-bottom: 30px;
+    height: 75px;
+    text-align: center;
+}
+
+.partner-heading p{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
 }
