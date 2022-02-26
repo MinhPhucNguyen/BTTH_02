@@ -460,3 +460,197 @@ body{
     color: #8219D3;
 }
 /* End: CSS for Content */
+
+/*Start: CSS for Semester */
+#semesters{
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+    background-color: #6C6C6C00;
+    background-image: url("https://aptech.vn/wp-content/uploads/2021/01/what-does-it-take-to-get-high-school-diploma-online-1024x683-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.semester-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.semester-inner .semester-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.semester-heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.semester-heading h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.semester-heading h3{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.semester-down{
+    text-align: center;
+}
+
+.semester-down i{
+    color: #fff;
+    font-size: 50px;
+}
+/*End: CSS for Semester */
+
+/*Start: CSS for List-path */
+#list-path{
+    width: 100%;
+}
+
+#list-path .list-path-wrap{
+    width: 75%;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.backgr-gray{
+    background-color: #DBDEE0;
+}
+
+.list-path-card {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.list-path-card .list-content{
+    width: 100%;
+}
+
+.list-content-heading{
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.list-content-heading h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.sub-list-content{
+    margin-bottom: 20px;
+}
+
+.sub-list-content-wrap{
+    margin-top: 20px;
+}
+
+.list-checkbox .list-checkbox-item{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+.list-checkbox .list-checkbox-item .list-checkbox-text{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Archivo', sans-serif;
+    padding-left: 12px;
+}
+
+.list-checkbox-item .list-checkbox-icon{
+    display: flex;
+}
+
+.list-checkbox-item .list-checkbox-icon i{
+    color: #0A25A6;
+    font-size: 20px;
+}
+
+.target-btn{
+    color: #0B249E;
+    width: 100%;
+    padding: 15px;
+}
+
+
+.target-btn:hover .list-img{
+    display: flex;
+    align-items: center;
+}
+.target-wrap .target-btn:hover{
+    display: block;
+}
+
+.target-btn-icon{
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.list-checkbox-text{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.list-img-even{
+    width: 100%;
+    margin-right: 30px;
+    padding: 30px 30px 30px 0;
+}
+
+.list-img-odd{
+    width: 100%;
+    margin-left: 30px;
+    padding: 30px 0 30px 30px;
+}
+
+.list-img .list-img-logo{
+    width: 100%;
+    text-align: center;
+}
+
+.list-img-logo img{
+    text-align: center;
+    width: 90%;
+}
+
+.target-content{
+    display: none;
+    padding: 15px;
+}
+
+.target-content-list{
+    margin: 15px 0 15px 20px;
+    font-size: 15px;
+    list-style-type:disc;
+    line-height: 20px;
+}
+
+.target-content-list li{
+    line-height: 30px;
+}
+
+
+/*End: CSS for List-path */
