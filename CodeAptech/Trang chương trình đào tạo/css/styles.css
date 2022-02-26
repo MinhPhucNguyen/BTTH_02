@@ -1,0 +1,462 @@
+/* css for all */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Start: CSS for Header */
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px -2px gray;
+    position: relative;
+    z-index: 2px;
+}
+
+.header-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#header .header-inner .logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header .header-inner .nav{
+   width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Archivo', sans-serif;
+}
+
+.main-menu>li{
+    width: fit-content;
+    margin-right: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+.main-menu>li>a{
+    text-decoration: none;
+    color: #020516;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-menu>li>a.active{
+    color: #0b249e;
+    text-shadow: 1px 1px #f5eeee;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.main-menu>li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #F4F4F4;
+    padding: 10px;
+    width: max-content;
+}
+
+.main-menu>li:hover .sub-menu li{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.main-menu>li:hover .sub-menu li a{
+    text-decoration: none;
+    color: #000;
+}
+/*End: CSS for Header  */
+
+/*Start: CSS for Slider */
+#slider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.slide-item{
+    width: 100%;
+    height: 100%;
+}
+
+.slide-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* End: CSS for Slider */
+
+/*Start: CSS for Intro */
+#intro{
+    width: 100%;
+    height: 600px;
+    padding: 48px 0 60px 0;
+
+}
+
+#intro .intro-wrapper{
+    width: 75%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.intro-wrapper .intro-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 5px;
+}
+
+.intro-heading .intro-border-left{
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom,#ff512f,#dd2476);
+}
+
+.intro-heading .intro-title{
+    padding-left: 30px;
+}
+
+.intro-heading .intro-title h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.intro-wrapper  .intro-content-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.intro-content{
+    display: flex;
+    padding: 5px;
+    margin-right: 24px;
+}
+
+.intro-content .intro-content-con ul{
+    margin: 15px 0 15px 20px;
+    width: 100%;
+}
+
+.intro-content-con ul>li{
+    font-size: 15px;
+    line-height: 30px;
+    list-style-type: disc;
+}
+
+.intro-content-wrap .intro-vid{
+    display: flex;
+    padding: 5px;
+    margin-left: 24px;
+}
+/* End: CSS for Intro */
+
+/*Start: CSS for Form */
+#form{
+    background-color: #000D75;
+    padding: 75px 0;
+}
+
+#form .form-inner{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.form-box{
+    width: 50%;
+    display: flex;
+}
+
+.form-box .form-sub-box{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.form-sub-box .form-text{
+    margin: 0 20px;
+}
+
+.form-title{
+    margin-bottom: 20px;
+}
+
+.form-sub-box .form-title h2{
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-sub-box .form-title h3{
+    margin-top: 8px;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+}
+
+.form-sub-box .scholarship{
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.scholarship a{
+    font-size: 28px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.form-text .sub-form-text{
+    width: 100%;    
+    display: block;
+}
+
+.sub-form-text .text{
+    width: 96%;
+    margin: 0 0 15px 0;
+    background-color: #FFFFFF;
+    display: block;
+}
+
+.sub-form-text .text5{
+    width: 96%;
+    height: 100px;
+}
+
+.sub-form-text .text textarea,
+.sub-form-text .text input{
+    width: 100%;
+    height: 100%;
+    padding: 9px;
+}
+
+.sub-form-text .text textarea{
+    padding: 9px;
+}
+
+.form-text .register-btn{
+    max-width: 100%;
+    height: 43.2px;
+    background-color: #EDB017;
+    margin-top: 74px;
+    text-align: center;
+    line-height: 43.2px;
+    border-radius: 4px;
+}
+
+.form-text .register-btn p{
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.form-text .register-btn:hover{
+    color: #FFFFFF;
+    background-color: #008FCA;
+}
+
+.form-img{
+    width: 50%;
+    display: flex;
+    padding: 30px;
+}
+
+.form-img img {
+    max-width: 100%;
+    min-height: 100%;
+}
+/* End: CSS for Form */
+
+/* Start: CSS for Object */
+#object{
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+
+.object-inner{
+    width: 80%;
+}
+
+.object-inner .object-heading{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.object-inner .object-heading h3{
+    font-size: 1.55rem;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.object-heading .object-border-orange{
+    width: 100%;
+    display: inline-block;
+}
+
+.object-border-orange .object-border{
+    width: 200px;
+    height: 3px;
+    background-color: #FF7B06;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.object-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.object-content .object-item{
+    width: 28%;
+    padding: 18px;
+    background-color: #ccc;
+}
+
+
+.object-content .object-item img{
+    width: 100%;
+    height: 230px;
+}
+
+.object-content .object-item p{
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 22.5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* End: CSS for Object */
+
+/* Start: CSS for Content */
+#content{
+    width: 100%;
+    height: 600px;
+    padding: 98px 0 70px 0;
+    background-color: #f7f9fb;
+    background-image: url("https://aptech.vn/wp-content/uploads/2021/08/business-background.png");
+    background-size: cover;
+}
+
+#content .content-inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-inner .content-heading-wrap{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+
+.content-heading-wrap .content-heading{
+    text-align: center;
+    width: 100%;
+}
+
+.content-heading-wrap .content-heading h2{
+    color: #4D02AD;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content-heading-wrap .content-heading h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.content-inner .content-container{
+    width: 100%;
+}
+
+.content-container .content-inner-list{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.content-inner-list .content-box{
+    padding: 15px 20px 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box .content-item{
+    padding: 20px 0 50px 0;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.content-item .content-text h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Archivo', sans-serif;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.content-item .content-text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.content-item .content-icon{
+    display: flex;
+}
+
+.content-icon .content-icon-con{
+    height: 80px;
+    width: 80px;
+    border: 2px solid #8219D3;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.content-icon .content-icon-con i{
+    line-height: 80px;
+    font-size: 40px;
+    color: #8219D3;
+}
+/* End: CSS for Content */
