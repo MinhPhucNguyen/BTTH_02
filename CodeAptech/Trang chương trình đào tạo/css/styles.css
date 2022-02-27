@@ -600,7 +600,7 @@ body{
     display: flex;
     align-items: center;
 }
-.target-wrap .target-btn:hover{
+.target-wrap .target-btn:hover .target-content-list{
     display: block;
 }
 
