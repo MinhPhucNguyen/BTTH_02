@@ -1,0 +1,20 @@
+/*--- form style---*/
+.form-group .error{
+	color:#ff0202;
+}
+#loading{
+    background: none repeat scroll 0 0 #CFCFCF;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:9999;
+}
+.spinner {
+    background: url("../images/spinner.gif") no-repeat scroll center top;
+    background-size: 32px 32px;
+    padding-top: 40px;
+}

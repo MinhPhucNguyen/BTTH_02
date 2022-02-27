@@ -1,0 +1,43 @@
+jQuery(document).ready(function () {
+  jQuery('.form-date').datepicker({ endDate: '-15y', format: 'dd-mm-yyyy', stsrtDate: new Date(1950, 1 - 1, 1) });
+  jQuery('body').on('blur', 'input.input-style,textarea.input-style', function () {
+    if (jQuery(this).val() == '') {
+      jQuery(this).val(jQuery(this).attr('focus'));
+    }
+  });
+  jQuery('body').on('focus', 'input.input-style,textarea.input-style', function () {
+    if (jQuery(this).val() == jQuery(this).attr('focus')) {
+      jQuery(this).val('');
+    }
+  });
+  jQuery('body').on('click', '.wf-submit',  function () {
+    var button = jQuery(this);
+    var form = jQuery(this).parents('.wf-form:first');
+    var loading = jQuery(this).parent();
+    var v = form.validate({
+      submitHandler: function () {
+        button.prop('disabled', true);
+        loading.addClass('spinner');
+        jQuery.post(wf_ajax.ajaxurl, {
+          action: "wf",
+          fid: form.attr('name'),
+          data: form.serialize()
+        }, function (response) {
+          var result = JSON.parse(response);
+          loading.removeClass('spinner');
+          button.prop('disabled', false);
+          process = false;
+          if (result.error) {
+            form.find('#recaptcha_instructions_image').html(result.error);
+            Recaptcha.reload();
+          } else if (result.success != '') {
+            window.location = result.success;
+          } else {
+            alert('Cảm ơn bạn đã gửi thông tin cho chúng tôi');
+            form.trigger("reset");
+          }
+        });
+      }
+    });
+  });
+});
