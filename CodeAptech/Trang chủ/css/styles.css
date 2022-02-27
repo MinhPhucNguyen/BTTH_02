@@ -943,6 +943,13 @@ span .fa-circle-chevron-right{
 .form-info-item input{
     width: 100%;
     height: 34px;
+    padding: 0 10px 0 10px;
+}
+
+.form-info-item select{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px 0 10px;
 }
 
 .send-confirm{
